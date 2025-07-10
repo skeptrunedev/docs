@@ -1,5 +1,5 @@
 {
-  "$schema": "https://mintlify.com/docs.json",
+  "$schema": "https://api.trieve.ai/api-docs/openapi.json",
   "theme": "mint",
   "name": "Mint Starter Kit",
   "colors": {
