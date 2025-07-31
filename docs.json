@@ -12,14 +12,245 @@
     "library": "lucide"
   },
   "navigation": {
-    "tabs": [
+    "dropdowns": [
       {
-        "tab": "Guides",
+        "dropdown": "Documentation",
+        "icon": "book",
+        "description": "Set up your documentation",
         "groups": [
           {
-            "group": "Getting Started",
+            "group": "Getting started",
             "pages": [
-              "docs/overview"
+              "index",
+              "quickstart",
+              "installation",
+              "editor"
+            ]
+          },
+          {
+            "group": "Core configuration",
+            "pages": [
+              "settings",
+              "pages",
+              "navigation",
+              "themes",
+              "settings/custom-domain"
+            ]
+          },
+          {
+            "group": "AI optimization",
+            "pages": [
+              "guides/assistant",
+              "ai/llmstxt",
+              "ai/contextual-menu",
+              "ai/markdown-export",
+              "mcp",
+              "guides/claude-code",
+              "guides/cursor",
+              "guides/windsurf"
+            ]
+          },
+          {
+            "group": "Components",
+            "pages": [
+              "text",
+              "image-embeds",
+              "list-table",
+              "code",
+              "reusable-snippets",
+              "components/accordions",
+              "components/callouts",
+              "components/cards",
+              "components/columns",
+              "components/code-groups",
+              "components/examples",
+              "components/expandables",
+              "components/fields",
+              "components/frames",
+              "components/icons",
+              "components/mermaid-diagrams",
+              "components/panel",
+              "components/steps",
+              "components/tabs",
+              "components/tooltips",
+              "components/update"
+            ]
+          },
+          {
+            "group": "API pages",
+            "pages": [
+              "api-playground/overview",
+              "api-playground/openapi-setup",
+              {
+                "group": "Customization",
+                "icon": "wrench",
+                "pages": [
+                  "api-playground/customization/complex-data-types",
+                  "api-playground/customization/adding-sdk-examples",
+                  "api-playground/customization/managing-page-visibility",
+                  "api-playground/customization/multiple-responses"
+                ]
+              },
+              {
+                "group": "AsyncAPI",
+                "icon": "webhook",
+                "pages": [
+                  "api-playground/asyncapi/setup",
+                  "api-playground/asyncapi/playground"
+                ]
+              },
+              {
+                "group": "MDX",
+                "icon": "markdown",
+                "pages": [
+                  "api-playground/mdx/configuration",
+                  "api-playground/mdx/authentication"
+                ]
+              },
+              "api-playground/troubleshooting"
+            ]
+          },
+          {
+            "group": "Authentication and personalization",
+            "pages": [
+              "authentication-personalization/overview",
+              "authentication-personalization/authentication-setup",
+              "authentication-personalization/partial-authentication-setup",
+              "authentication-personalization/personalization-setup",
+              "authentication-personalization/sending-data"
+            ]
+          },
+          {
+            "group": "Guides",
+            "pages": [
+              "guides/migration",
+              "guides/analytics",
+              "react-components",
+              "settings/custom-scripts",
+              "settings/seo",
+              "guides/changelogs",
+              "guides/hidden-pages",
+              "settings/broken-links",
+              "guides/monorepo",
+              {
+                "group": "Custom Subdirectory",
+                "icon": "folder",
+                "pages": [
+                  "advanced/subpath/cloudflare",
+                  "advanced/subpath/route53-cloudfront",
+                  "advanced/subpath/vercel"
+                ]
+              },
+              {
+                "group": "Dashboard Access",
+                "icon": "gauge",
+                "pages": [
+                  "advanced/dashboard/sso",
+                  "advanced/dashboard/permissions",
+                  "advanced/dashboard/roles"
+                ]
+              },
+              "guides/deployments",
+              "contact-support"
+            ]
+          },
+          {
+            "group": "Integrations",
+            "pages": [
+              {
+                "group": "Analytics",
+                "icon": "chart-no-axes-combined",
+                "pages": [
+                  "integrations/analytics/overview",
+                  "integrations/analytics/amplitude",
+                  "integrations/analytics/clearbit",
+                  "integrations/analytics/fathom",
+                  "integrations/analytics/google-analytics",
+                  "integrations/analytics/google-tag-manager",
+                  "integrations/analytics/heap",
+                  "integrations/analytics/hotjar",
+                  "integrations/analytics/koala",
+                  "integrations/analytics/logrocket",
+                  "integrations/analytics/mixpanel",
+                  "integrations/analytics/pirsch",
+                  "integrations/analytics/plausible",
+                  "integrations/analytics/posthog",
+                  "integrations/analytics/segment"
+                ]
+              },
+              {
+                "group": "SDKs",
+                "icon": "folder-code",
+                "pages": [
+                  "integrations/sdks/speakeasy",
+                  "integrations/sdks/stainless"
+                ]
+              },
+              {
+                "group": "Support",
+                "icon": "messages-square",
+                "pages": [
+                  "integrations/support/overview",
+                  "integrations/support/intercom",
+                  "integrations/support/front"
+                ]
+              },
+              {
+                "group": "Privacy",
+                "icon": "folder-lock",
+                "pages": [
+                  "integrations/privacy/overview",
+                  "integrations/privacy/osano"
+                ]
+              }
+            ]
+          },
+          {
+            "group": "Version control and CI/CD",
+            "pages": [
+              "settings/github",
+              "settings/gitlab",
+              "settings/ci",
+              "settings/preview-deployments"
+            ]
+          }
+        ]
+      },
+      {
+        "dropdown": "API Reference",
+        "description": "Reference for the API",
+        "icon": "terminal",
+        "groups": [
+          {
+            "group": "API Reference",
+            "pages": [
+              "api-reference/introduction"
+            ]
+          },
+          {
+            "group": "Admin",
+            "pages": [
+              "api-reference/update/trigger",
+              "api-reference/update/status"
+            ]
+          },
+          {
+            "group": "Assistant",
+            "pages": [
+              "api-reference/chat/create-assistant-message"
+            ]
+          }
+        ]
+      },
+      {
+        "dropdown": "Changelog",
+        "icon": "history",
+        "description": "Updates and changes",
+        "groups": [
+          {
+            "group": "Changelog",
+            "pages": [
+              "changelog"
             ]
           }
         ]
