@@ -6,6 +6,8 @@ mode: "custom"
 public: true
 ---
 
+import { PreviewButton } from "/snippets/previewbutton.jsx"
+
 # Overview
 
 export const HeroCard = ({ filename, title, description, href }) => {
@@ -74,3 +76,10 @@ export const HeroCard = ({ filename, title, description, href }) => {
     </div>
   </div>
 </div>
+
+
+## .md URL extension
+
+Add `.md` to any page's URL to view a Markdown version.
+
+<PreviewButton href="https://mintlify.com/docs/ai/markdown-export.md">Open this page as Markdown</PreviewButton>
