@@ -1,5 +1,3 @@
-import React, { useState, useEffect } from "react";
-
 export const PreviewButton = ({ children, href }) => {
   const [count, setCount] = useState(0);
   const [activeTab, setActiveTab] = useState("Tab 1");
